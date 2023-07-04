@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laporan Keuangan</title>
+    <link rel="icon" href="img/logo 2.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    <style>
+      body {
+        background-color: beige;
+      }
+      table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        margin: 2rem 0;
+        width: 100%;
+      }
+      th,
+      td {
+        padding: 1rem 1.5rem;
+        text-align: left;
+      }
+      th {
+        background-color: #008c5f; /* header background color */
+        color: #fff; /* header text color */
+        font-weight: 600;
+      }
+      tr {
+        padding: 0;
+      }
+      td {
+        vertical-align: middle;
+      }
+      tr:nth-child(even) td {
+        background-color: rgba(0, 0, 0, 0.075); /* striped background color */
+      }
+      @media screen and (max-width: 640px) {
+        thead,
+        th {
+          display: none;
+        }
+        tr,
+        td {
+          display: block;
+        }
+        tr {
+          border: 1px solid rgba(0, 0, 0, 0.15);
+          margin-bottom: 2rem;
+        }
+        tr:last-child {
+          margin-bottom: 0;
+        }
+        tr:nth-child(even) td {
+          background-color: transparent;
+        }
+        td {
+          clear: both;
+          text-align: right;
+        }
+        td:before {
+          content: attr(data-label) ": ";
+          float: left;
+          font-weight: bold;
+          margin-right: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!--INI UNTUK NAVBAR-->
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <img src="img/logo 2.png" alt="Bootstrap" width="100" height="40" style="margin-left: 10px" />
+        <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header">
+            <h5><i class="bi bi-columns-gap"></i> Administrator</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../dashboard.html"><i class="bi bi-house-fill text-light"></i> Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-columns-gap text-light"></i> Master Data</a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li>
+                    <a class="dropdown-item" href="../master data/master petugas/master_petugas.html"><i class="bi bi-fire text-light"></i> Master Petugas</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../master data/master anggota/master_anggota.html"><i class="bi bi-person-fill-gear text-light"></i> Master Anggota</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../master data/master tabungan/master_tabungan.html"><i class="bi bi-currency-bitcoin"></i> Master Tabungan</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../master data/master pengajuan/master_pengajuan.html"><i class="bi bi-bookmark-star-fill"></i> Master Pengajuan</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../transaksi/transaksi.html"><i class="bi bi-currency-dollar"></i> Transaksi</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-journal-text"></i> Laporan </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li>
+                    <a class="dropdown-item" href="laporan.html"><i class="bi bi-people-fill"></i> Data Anggota</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="data_simpanan.html"><i class="bi bi-device-ssd-fill"></i> Data Simpanan</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="data_pinjaman.html"><i class="bi bi-currency-exchange"></i> Data Pinjaman</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="laporan_perbulan.html"><i class="bi bi-clock-history"></i> Perbulan</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="laporan_keuangan.html"><i class="bi bi-currency-dollar"></i> Keuangan</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-wrench-adjustable"></i> Pengaturan</a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li>
+                    <a class="dropdown-item" href="../pengaturan/setting_data_simpanan.html"><i class="bi bi-pencil-square"></i> Setting Simpanan</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../pengaturan/setting_data_pinjaman.html"><i class="bi bi-newspaper"></i> Setting Pinjaman</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href=""><i class="bi bi-person-gear"></i> Setting User</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-person-fill-x"></i> Logout</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!--INI UNTUK DATA PETUGAS-->
+    <div class="container text-center" style="margin-top: 100px">
+      <h3 class="fw-bold text-center"><i class="bi bi-briefcase-fill"></i> Laporan Keuangan</h3>
+      <div class="row mt-5">
+        <div class="col-md-4 mb-3">
+          <div class="card" style="box-shadow: 5px 5px 10px 1px #000">
+            <h5>Pendapatan</h5>
+            <hr />
+            <h5>Rp. 34.000.000</h5>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card" style="box-shadow: 5px 5px 10px 1px #000">
+            <h5>Pengeluaran</h5>
+            <hr />
+            <h5>Rp. 54.000.000</h5>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card" style="box-shadow: 5px 5px 10px 1px #000">
+            <h5>Aktiva</h5>
+            <hr />
+            <h5>Rp. -34.000.000</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--INI CDN JAVASCRIPT NYA-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+  </body>
+</html>

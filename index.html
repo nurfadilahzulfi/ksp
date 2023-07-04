@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>KSP Sejahtera Bersama</title>
+    <link rel="icon" href="img/logo 2.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Belanosima&display=swap" rel="stylesheet" />
+    <style>
+      body {
+        background-color: rgb(255, 255, 255);
+      }
+      .card {
+        justify-content: center;
+        border-radius: 70px;
+        border-color: darkgray;
+        text-align: center;
+        padding: 20px;
+        background-color: rgb(210, 136, 0);
+        box-shadow: 5px 5px 10px 1px #c9adad;
+      }
+      #contact {
+        background-color: rgb(43, 43, 40);
+      }
+      .teks {
+        font-family: "Belanosima", sans-serif;
+        color: white;
+      }
+      .logo {
+        border-radius: 150px;
+        width: 50px;
+        height: 50px;
+      }
+      .text {
+        color: white;
+      }
+      .profil {
+        width: 300px;
+        height: 370px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--ini untuk navbar-->
+    <nav class="navbar fixed-top">
+      <div class="container-fluid">
+        <img src="img/logo 2.png" alt="Bootstrap" width="100" height="40" style="margin-left: 10px" />
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+            <button type="button" class="btn-close btn btn-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin-left: 10px">
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="index.html"><i class="bi bi-house-fill"></i> Beranda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="login.html"><i class="bi bi-person-circle" style="margin-right: 4px"></i>Masuk</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search" style="margin-right: 4px">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+              <button class="btn btn-outline-success" type="submit"><i class="bi bi-search"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!--ini untuk carousel-->
+
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/03.jpg" class="d-block w-100" alt="" />
+        </div>
+        <div class="carousel-item">
+          <img src="img/banner-mobile-web-promo-diperpanjang.jpg" class="d-block w-100" alt="" />
+        </div>
+        <div class="carousel-item">
+          <img src="img/Merchant-REV-1.jpg" class="d-block w-100" alt="" />
+        </div>
+        <div class="carousel-item">
+          <img src="img/merchant-berkilau-apk-banner-2.jpg" class="d-block w-100" alt="" />
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <br />
+
+    <!--ini kata sambutan kepala dinas-->
+    <section id="sambutan">
+      <div class="container text-center mt-5">
+        <div class="row justify-content-center">
+          <div class="col-md-4 mb-3">
+            <img class="profil" src="img/profil.jpeg" alt="" style="box-shadow: 13px 7px 11px 2px #9c9898; border-radius: 29px" />
+          </div>
+          <div class="col-md-7 mb-3">
+            <h5 class="fw-bold">"" SAMBUTAN KEPALA DINAS</h5>
+            <hr style="width: 200px" />
+            <p class="fw-medium">Assalamu 'alaikum Wr. Wb.</p>
+            <p>
+              Dengan memanjatkan puji syukur kehadirat Tuhan Yang Maha Kuasa, atas limpahan rahmat dan hidayah-Nya, Dinas Koperasi UKM Provinsi Jawa Tengah telah memperbaharui tampilan content website sebagai salah satu peningkatan fungsi
+              pelayanan kepada seluruh lapisan masyarakat pada umumnya dan Gerakan Koperasi dan UKM pada khususnya.
+            </p>
+            <p>
+              Kami berupaya agar layanan informasi dan komunikasi terus berkembang dan memberikan akses yang lebih baik dan lengkap sehingga dapat mempermudah interaksi jejaring serta mengembangkan media informasi bagi Koperasi dan Usaha
+              Kecil dan Menengah.
+            </p>
+            <p>
+              Website ini diharapkan dapat digunakan sebagai wahana aktivitas semua pihak untuk melakukan jalinan kemitraan, kontak bisnis, peluang pasar, peningkatan kualitas sumberdaya manusia dan penguatan kapasitas kelembagaan dan usaha
+              Koperasi dan UKM, sehingga diharapkan dapat terwujud Visi Dinas Koperasi UKM Provinsi Jawa Tengah 2013-2018 yaitu "Sejahtera Bersama Koperasi dan UKM".
+            </p>
+            <p>
+              Kami menyadari akan keterbatasan yang ada, untuk itu demi kesempurnaan sajian website ini, kami harapkan saran dan kritik yang membangun dari semua pihak. Serta tidak lupa kami sampaikan ucapan terima kasih kepada semua pihak
+              yang telah memberi dukungan dalam mewujudkan website ini.
+            </p>
+            <p>
+              Koperasi simpan pinjam memberikan kesempatan bagi anggotanya untuk menyimpan uang mereka dan meminjam dana dengan suku bunga yang lebih terjangkau daripada yang ditawarkan oleh lembaga keuangan formal. Sistem ini memberikan akses ke layanan keuangan kepada masyarakat yang sebelumnya sulit dijangkau oleh institusi keuangan konvensional. Dalam era digital yang berkembang pesat, penerapan sistem informasi menjadi penting untuk meningkatkan efisiensi dan efektivitas operasional koperasi simpan pinjam.
+            </p>
+            <p class="fw-medium">Wassalamu 'alaikum Wr. Wb.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!---INI UNTUK KONTEN TEXTS-->
+    <h2 class="text-center mt-5 fw-bold">Produk</h2>
+    <!--INI UNTUK KOLOM-->
+    <section>
+      <div class="container">
+        <div class="row justify-content-center mt-4">
+          <div class="col-md-4 mb-3">
+            <div class="card btn btn-light">
+              <img src="img/safe-box.png" class="card-img-top" alt="safe-box" />
+              <div class="card-body">
+                <h5 class="fw-bold">SIMPANAN BERJANGKA</h5>
+                <p>Pilihan Investasi yang Memberi Keuntungan dan Rasa Aman Untuk memastikan uang Anggota diinvestasikan di tempat yang aman</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card btn btn-light">
+              <img src="img/save-money.png" class="card-img-top" alt="save-money" />
+              <div class="card-body">
+                <h5 class="fw-bold">SIMPANAN SEJAHTERA</h5>
+                <p>Simpanan untuk perorangan Warga Negara Indonesia dengan persyaratan mudah dan ringan yang diterbitkan untuk Anggota</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card btn btn-light">
+              <img src="img/pension.png" class="card-img-top" alt="pension" />
+              <div class="card-body">
+                <h5 class="fw-bold">PINJAMAN</h5>
+                <p>Manfaat kesempatan untuk terus berkarya dan mewujudkan rencana anda kedepan melalui Pinjaman OREN Oleh KOPNUS</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--INI UNTUK TENTANG KAMI-->
+    <br />
+    <section id="tentang-kami">
+      <div class="container">
+        <div class="row justify-content-center mt-5">
+          <div class="col-md-4 mb-3 text-center">
+            <h2 class="fw-bold">Tentang Kami KSP Sejahtera Bersama</h2>
+          </div>
+          <div class="col-md-4 mb-3">
+            <p>
+              Tentang Kami KSP Sejahtera Bersama merupakan salah satu Koperasi terbesar di Indonesia, kini bertransformasi menjadi KOPSEJAHPOS setelah melakukan kerjasama Joint Operation dengan PT POS INDONESIA, salah satu BUMN terbesar dan
+              tersebar di seluruh provinsi di Indonesia.salah satu BUMN terbesar dan tersebar di seluruh provinsi di Indonesia. Sebagai kekuatan ekonomi nasional dan semakin dekat dengan anggota, KOPSEJAHPOS memiliki 11 kantor cabang utama,
+              dan lebih dari 200 kantor cabang yang tersebar di seluruh Indonesia. KOPSEJAHTERA meluncurkan aplikasi KOPSEJAHPOS untuk mempermudah transaksi keuangan anda, juga diharapkan mampu meningkatkan layanan segala kebutuhan
+              finansial bagi Anggotanya.
+            </p>
+          </div>
+          <div class="col-md-4 mb-3"><img src="img/Banner-Home-1.jpg" class="card-img-top" alt="pension" /></div>
+        </div>
+      </div>
+    </section>
+
+    <!--INI SECTION UNTUK FORMULIR PENGADUAN-->
+    <seection id="form">
+      <div class="container mt-4">
+        <h5 class="fw-medium">Kirim Saran dan Pengaduan</h5>
+        <hr />
+        <div class="row mt-4">
+          <div class="col-md-6 mb-3">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"><h6 class="fw-bold">Nama Anda*</h6></label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"><h6 class="fw-bold">Judul*</h6></label>
+                <input type="password" class="form-control" id="exampleInputPassword1" />
+              </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label"><h6 class="fw-bold">Email*</h6></label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label"><h6 class="fw-bold">Telepon</h6></label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label"><h6 class="fw-bold">Pesan*</h6></label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Kirim</button>
+      </form>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#2B2B28"
+          fill-opacity="1"
+          d="M0,160L40,170.7C80,181,160,203,240,218.7C320,235,400,245,480,261.3C560,277,640,299,720,288C800,277,880,235,960,224C1040,213,1120,235,1200,234.7C1280,235,1360,213,1400,202.7L1440,192L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
+        ></path>
+      </svg>
+    </seection>
+
+    <!--INI UNTUK kontak-->
+    <section id="contact">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-4 mb-3">
+            <h6 class="teks fw-bold">Hubungi Kami</h6>
+            <img src="img/logo 2.png" alt="logo" style="width: 150px; height: 100px" />
+            <hr style="color: rgb(223, 208, 33)" />
+            <h6 class="teks text-white fw-bold">KANTOR OPERASIONAL KSP SEJAHTERA</h6>
+            <p class="text">Gedung KOPNUSPOS Jln. Prof. Dr. Soepomo No. 2b Jakarta 12870 – Indonesia</p>
+            <h6 class="teks text-white fw-bold">KANTOR PUSAT</h6>
+            <p class="text">KOPERASI SIMPAN PINJAM SEJAHTERA JALAN RAYA MEDAN-BANDA ACEH NO.32, Kel. Buket Rata, Kec. Blang Mangat, Kab. Lhokseumawe, Prop. Aceh</p>
+          </div>
+          <div class="col-md-4 mb-3 text-center">
+            <h6 class="teks text-white fw-bold">Sosial Media</h6>
+            <div class="row mt-4">
+              <div class="col">
+                <a class="btn btn-primary" href="https://facebook.com/fadilah_zulfi"><img class="logo" src="img/fb.png" alt="" /></a>
+              </div>
+              <div class="col">
+                <a class="btn btn-light" href="https://instagram.com/fadilah_zulfi"><img class="logo" src="img/ig.jpg" alt="" /></a>
+              </div>
+              <div class="col">
+                <a class="btn btn-light" href="https://github.com/nurfadilahzulfi"><img class="logo" src="img/github.png" alt="" /></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3 text-center">
+            <img src="img/time-2.png" alt="" />
+            <hr style="color: white" />
+            <p class="text">
+              Call Center KOPNUS 1500099 <br />
+              WhatsApp KOPNUS 0819 0950 0099
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="text-center">Copyright 2023 By Nur Fadilah Zulfi</footer>
+    <!--ini cdn untuk javascript-->
+    <script></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+  </body>
+</html>
